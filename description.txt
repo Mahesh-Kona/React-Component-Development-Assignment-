@@ -1,0 +1,69 @@
+💡 Description of Approach
+
+I followed a component-driven development workflow:
+
+1. Project Setup
+
+Initialized React + TypeScript project.
+
+Configured TailwindCSS for utility-first styling.
+
+Installed Storybook for component documentation.
+
+2. InputField Component
+
+Built a reusable input with props for label, placeholder, helper text, and error message.
+
+Implemented variants (filled, outlined, ghost) and sizes (sm, md, lg).
+
+Added states for disabled and invalid.
+
+Added accessibility features:
+
+label association with htmlFor
+
+aria-invalid and aria-describedby
+
+3. DataTable Component
+
+Designed a type-safe, generic table using TypeScript generics.
+
+Implemented sorting by clicking headers, with aria-sort for screen readers.
+
+Added row selection (checkboxes) with callback for selected rows.
+
+Added loading and empty states.
+
+Accessibility features:
+
+role="table", role="row", role="cell"
+
+Keyboard sorting (Enter/Space)
+
+4. Storybook Documentation
+
+Wrote stories for all component states and variants.
+
+Added Docs tab descriptions, prop tables, and usage examples.
+
+Verified accessibility and responsiveness.
+
+📘 Accessibility Notes
+
+InputField
+
+Label linked to input (htmlFor, id)
+
+Error & helper text linked with aria-describedby
+
+aria-invalid state announced by screen readers
+
+DataTable
+
+Uses semantic table roles (table, row, cell, columnheader)
+
+aria-sort indicates sorting direction
+
+Row selection checkboxes have aria-label
+
+Supports keyboard navigation
