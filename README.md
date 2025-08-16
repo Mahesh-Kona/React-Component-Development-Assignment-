@@ -12,6 +12,21 @@ React + TypeScript + TailwindCSS + Storybook project for UI component developmen
 
 ---
 
+##folder structure
+
+src/
+ ├── components/
+ │    ├── InputField/
+ │    │    ├── InputField.tsx
+ │    │    ├── InputField.stories.tsx
+ │    │    └── index.ts
+ │    ├── DataTable/
+ │    │    ├── DataTable.tsx
+ │    │    ├── DataTable.stories.tsx
+ │    │    └── index.ts
+ └── App.tsx
+
+
 ## 📂 Components
 
 ### 1. InputField
